@@ -13,7 +13,7 @@ public class SelenideTest {
     }
 
     @Test
-    void TestSelenideSuccess() {
+    void testSelenideSuccess() {
         $("[data-test-id=name] input").sendKeys("Иван Петров");
         $("[data-test-id=phone] input").sendKeys("+79012345678");
         $("[data-test-id=agreement]").click();
@@ -22,7 +22,7 @@ public class SelenideTest {
     }
 
     @Test
-    void TestSelenideNameLat() {
+    void testSelenideNameLat() {
         $("[data-test-id=name] input").sendKeys("Ivan Petrov");
         $("[data-test-id=phone] input").sendKeys("+79032348679");
         $("[data-test-id=agreement]").click();
@@ -31,7 +31,7 @@ public class SelenideTest {
     }
 
     @Test
-    void TestSelenidPhone() {
+    void testSelenidPhone() {
         $("[data-test-id=name] input").sendKeys("Иван-Ваня Петров");
         $("[data-test-id=phone] input").sendKeys("879032348679");
         $("[data-test-id=agreement]").click();
@@ -40,7 +40,7 @@ public class SelenideTest {
     }
 
     @Test
-    void TestSelenidClick() {
+    void testSelenidClick() {
         $("[data-test-id=name] input").sendKeys("Иван-Ваня Петров");
         $("[data-test-id=phone] input").sendKeys("+79032348679");
         $("[type=button").click();
@@ -48,7 +48,7 @@ public class SelenideTest {
     }
 
     @Test
-    void TestSelenideNameEmpty() {
+    void testSelenideNameEmpty() {
         $("[data-test-id=name] input").sendKeys("");
         $("[data-test-id=phone] input").sendKeys("+79032348679");
         $("[data-test-id=agreement]").click();
@@ -57,7 +57,7 @@ public class SelenideTest {
     }
 
     @Test
-    void TestSelenidPhoneEmpty() {
+    void testSelenidPhoneEmpty() {
         $("[data-test-id=name] input").sendKeys("Иван-Ваня Петров");
         $("[data-test-id=phone] input").sendKeys("");
         $("[data-test-id=agreement]").click();
